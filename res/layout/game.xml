@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_grid_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/pi2"
+    >
+
+    <Button
+        android:id="@+id/start_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Restart Game" 
+        android:background="@drawable/ere"
+        />
+
+    <Button
+        android:id="@+id/depth_add_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/start_btn"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/start_btn"
+        android:text="" 
+        android:background="#191919"
+        
+        />
+
+    <Button
+        android:id="@+id/depth_minus_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_btn"
+        android:layout_alignBottom="@+id/start_btn"
+        android:layout_toRightOf="@id/depth_add_btn"
+        android:text="" 
+        android:background="#191919"
+        />
+
+    <TextView
+        android:id="@+id/plidDepth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/depth_minus_btn"
+        android:layout_alignBottom="@id/depth_minus_btn"
+        android:layout_toRightOf="@id/depth_minus_btn"
+        android:text="Current Depth is: " 
+        android:textColor="#191919"
+        />
+
+    <CheckBox
+        android:id="@+id/humanFirstCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/start_btn"
+        android:text="Player Starts" 
+        android:textColor="#0096fd"
+        
+        />
+    <TextView
+        android:id="@+id/plidDepth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/start_btn"
+        android:text="Developed by CHANDAN --> The Game Developer " 
+        android:textColor="#ffecce"
+        android:textSize="10dp"
+     
+        />
+
+    <chandan.connectfour.Connect4View
+        android:id="@+id/connect4View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
